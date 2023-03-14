@@ -1,7 +1,11 @@
 :root {
     padding: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --font-1: black;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -16,8 +20,17 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0.5em;
 }
 
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 p {
     font-size: 14px;
+}
+
+a {
+    text-align: right;
 }
 
 .app {
@@ -36,9 +49,17 @@ header {
 
 .main {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
     gap: 40px;
+    grid-template-columns: repeat(3,1fr);      
 }
+
+/* This isn't working for some reason...
+@media (min-width:720px) {
+    main {
+        grid-template-columns:repeat(3,1fr)
+    }
+}
+*/
 
 .section {
 
@@ -51,10 +72,14 @@ ul {
 
 li {
     font-size: 14px;
-    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    color: rgb(43, 90, 4);
     list-style-type: none;
-    border-bottom: dashed red;
+    border-bottom: 0.5px solid rgb(43, 90, 4);
     padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 li.link {
