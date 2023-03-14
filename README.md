@@ -1,1 +1,1 @@
-# landing-page-2
+A remake of https://moon.fyi/ for practice, with different styling.
